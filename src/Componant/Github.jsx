@@ -15,11 +15,11 @@ const UserProfile = () => {
     }
 
     return (
-        <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'} h-screen w-full flex flex-col justify-center items-center transition-all duration-300`}>
-            <header className="lg:w-[50%] flex justify-between items-center mb-6 gap-28">
-                <h1 className="text-3xl font-semibold font-mono">DevDetective</h1>
+        <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}  h-full w-full lg:h-screen lg:w-full flex flex-col justify-center items-center transition-all duration-300 px-5 overflow-hidden`}>
+            <header className="lg:w-[50%] flex justify-between items-center mb-6 gap-20">
+                <h1 className="text-3xl font-semibold font-mono mt-5">DevDetective</h1>
 
-                <div className="flex items-center gap-4 cursor-pointer text-lg font-mono font-semibold"> Dark
+                <div className="flex items-center gap-4 cursor-pointer text-lg font-mono font-semibold mt-5"> Dark
 
                     {darkMode ? 
                     (<BsSunFill onClick={handlechange} className="text-yellow-400 text-2xl cursor-pointer" />) :   
@@ -62,8 +62,8 @@ const UserProfile = () => {
                     </div>
                 </div>
 
-                <div className={`lg:w-[70%] grid grid-cols-2 p-4 lg:ml-50 lg:mt-10 rounded-lg justify-center items-center ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
-                    <div className="mb-5 flex justify-center items-center text-lg font-mono">
+                <div className={`lg:w-[70%] w-full h-full grid grid-cols-2 p-4 lg:ml-50 lg:mt-10 rounded-lg  lg:gap-5 gap-5 justify-center items-center ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+                    <div className="mb-5 flex justify-center items-center text-lg font-mono ">
                         <p className="flex gap-1"><MdLocationOn className="mt-1" /> Not Available</p>
                     </div>
                     <div className="mb-5 flex justify-center items-center text-lg font-mono">
